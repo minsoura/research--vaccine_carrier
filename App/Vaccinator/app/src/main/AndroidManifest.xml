@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.minsoura.vaccinator">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:windowSoftInputMode="stateHidden"
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateHidden"
+            android:name=".recordPage.InfoActivity"
+            android:label="information"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".carrierPage.CarrierPage"
+            android:label="Bluetooth"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="xyz.minsoura.vaccinator.MainActivity" />
+
+
+        </activity>
+        <activity android:name=".carrierPage.DeviceListActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog"/>
+        <activity android:name=".carrierPage.FileListActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog"/>
+        <activity android:name=".carrierPage.FileViewActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog"/>
+    </application>
+
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:title="ITEM_ONE">
+            <menu>
+
+        <item
+            android:id="@+id/update_Profile"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="GALLERY" />
+                <item
+                    android:id="@+id/DatingPreference"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="SHARE" />
+            </menu>
+        </item>
+    <item android:title="ITEM_TWO">
+        <menu>
+
+            <item
+                android:id="@+id/app_setting"
+                android:icon="@drawable/setting"
+                android:title="SETTING" />
+            <item
+                android:id="@+id/key_store"
+                android:icon="@drawable/key_store"
+                android:title="KEY_STROE" />
+
+        </menu>
+    </item>
+
+
+
+</menu>
